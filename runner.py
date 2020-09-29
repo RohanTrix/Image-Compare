@@ -70,9 +70,9 @@ def compare(source = "main_image/main.jpg", comp = 'images/test.png'):
     #cv2.destroyAllWindows()
 
 def run():
-    source = 'main_image\\main.jpg'
+    source = 'main_image/main.jpg'
     titles = []
-    for f in glob.iglob("images\*"):
+    for f in glob.iglob("images/*"):
         titles.append(f)
     print(*titles)
     d = {os.path.basename(source) :
