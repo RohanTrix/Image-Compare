@@ -74,7 +74,7 @@ def run():
     titles = []
     for f in glob.iglob("images/*"):
         titles.append(f)
-    print(*titles)
+    #print(*titles)
     d = {os.path.basename(source) :
                                     { os.path.basename(img): 0  for img in titles   
             }}
